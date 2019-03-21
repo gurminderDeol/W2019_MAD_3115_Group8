@@ -12,8 +12,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        perform(#selector(splash), with:nil, afterDelay:3)
     }
+    
+    @objc func splash()
+    {
+        performSegue(withIdentifier: "splash", sender: self)
+    }
+
 
 
 }
