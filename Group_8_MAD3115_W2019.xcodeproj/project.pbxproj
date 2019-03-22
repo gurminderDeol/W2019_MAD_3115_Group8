@@ -23,7 +23,12 @@
 		0DBA5FE4224448D600FC28EF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA5FE3224448D600FC28EF /* SignInViewController.swift */; };
 		0DBA5FE62244490A00FC28EF /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA5FE52244490A00FC28EF /* UserLogin.swift */; };
 		0DBA5FE82244493E00FC28EF /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA5FE72244493E00FC28EF /* MenuTableViewController.swift */; };
-		0DBA5FEB2244499300FC28EF /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA5FEA2244499300FC28EF /* ProductsTableViewController.swift */; };
+		0DBA5FED2244507C00FC28EF /* laptop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DBA5FEC2244507C00FC28EF /* laptop.jpg */; };
+		0DBA5FEF2244511000FC28EF /* mouse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DBA5FEE2244511000FC28EF /* mouse.jpg */; };
+		0DBA5FF12244520F00FC28EF /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA5FF02244520F00FC28EF /* ProductsViewController.swift */; };
+		0DBA5FF32244544A00FC28EF /* ProductsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA5FF22244544A00FC28EF /* ProductsTableViewCell.swift */; };
+		0DBA5FF62244558600FC28EF /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA5FF52244558600FC28EF /* Product.swift */; };
+		0DBA5FF922445BAF00FC28EF /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA5FF822445BAF00FC28EF /* IDisplay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +50,12 @@
 		0DBA5FE3224448D600FC28EF /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		0DBA5FE52244490A00FC28EF /* UserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogin.swift; sourceTree = "<group>"; };
 		0DBA5FE72244493E00FC28EF /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
-		0DBA5FEA2244499300FC28EF /* ProductsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
+		0DBA5FEC2244507C00FC28EF /* laptop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = laptop.jpg; sourceTree = "<group>"; };
+		0DBA5FEE2244511000FC28EF /* mouse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mouse.jpg; sourceTree = "<group>"; };
+		0DBA5FF02244520F00FC28EF /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		0DBA5FF22244544A00FC28EF /* ProductsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewCell.swift; sourceTree = "<group>"; };
+		0DBA5FF52244558600FC28EF /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		0DBA5FF822445BAF00FC28EF /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,8 @@
 		0DBA5FBF2244452B00FC28EF /* Group_8_MAD3115_W2019 */ = {
 			isa = PBXGroup;
 			children = (
+				0DBA5FF722445B9200FC28EF /* Protocol */,
+				0DBA5FF42244556600FC28EF /* Modals */,
 				0DBA5FE92244497500FC28EF /* Products */,
 				0DBA5FD22244467400FC28EF /* Images */,
 				0DBA5FC02244452B00FC28EF /* AppDelegate.swift */,
@@ -89,6 +101,7 @@
 				0DBA5FE3224448D600FC28EF /* SignInViewController.swift */,
 				0DBA5FE52244490A00FC28EF /* UserLogin.swift */,
 				0DBA5FE72244493E00FC28EF /* MenuTableViewController.swift */,
+				0DBA5FF22244544A00FC28EF /* ProductsTableViewCell.swift */,
 			);
 			path = Group_8_MAD3115_W2019;
 			sourceTree = "<group>";
@@ -96,6 +109,8 @@
 		0DBA5FD22244467400FC28EF /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0DBA5FEE2244511000FC28EF /* mouse.jpg */,
+				0DBA5FEC2244507C00FC28EF /* laptop.jpg */,
 				0DBA5FDB224446EB00FC28EF /* MyProfile.png */,
 				0DBA5FD7224446CB00FC28EF /* Help.png */,
 				0DBA5FD3224446B200FC28EF /* Cart.png */,
@@ -111,9 +126,25 @@
 		0DBA5FE92244497500FC28EF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0DBA5FEA2244499300FC28EF /* ProductsTableViewController.swift */,
+				0DBA5FF02244520F00FC28EF /* ProductsViewController.swift */,
 			);
 			path = Products;
+			sourceTree = "<group>";
+		};
+		0DBA5FF42244556600FC28EF /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				0DBA5FF52244558600FC28EF /* Product.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		0DBA5FF722445B9200FC28EF /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				0DBA5FF822445BAF00FC28EF /* IDisplay.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +213,9 @@
 				0DBA5FE22244484E00FC28EF /* splash1.png in Resources */,
 				0DBA5FDE224446FB00FC28EF /* products.png in Resources */,
 				0DBA5FC62244452B00FC28EF /* Main.storyboard in Resources */,
+				0DBA5FEF2244511000FC28EF /* mouse.jpg in Resources */,
 				0DBA5FD6224446BA00FC28EF /* contact_us.png in Resources */,
+				0DBA5FED2244507C00FC28EF /* laptop.jpg in Resources */,
 				0DBA5FE0224447AA00FC28EF /* orders.png in Resources */,
 				0DBA5FDC224446EB00FC28EF /* MyProfile.png in Resources */,
 			);
@@ -195,12 +228,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DBA5FF12244520F00FC28EF /* ProductsViewController.swift in Sources */,
+				0DBA5FF62244558600FC28EF /* Product.swift in Sources */,
 				0DBA5FC32244452B00FC28EF /* ViewController.swift in Sources */,
-				0DBA5FEB2244499300FC28EF /* ProductsTableViewController.swift in Sources */,
+				0DBA5FF32244544A00FC28EF /* ProductsTableViewCell.swift in Sources */,
 				0DBA5FC12244452B00FC28EF /* AppDelegate.swift in Sources */,
 				0DBA5FE82244493E00FC28EF /* MenuTableViewController.swift in Sources */,
 				0DBA5FE62244490A00FC28EF /* UserLogin.swift in Sources */,
 				0DBA5FE4224448D600FC28EF /* SignInViewController.swift in Sources */,
+				0DBA5FF922445BAF00FC28EF /* IDisplay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

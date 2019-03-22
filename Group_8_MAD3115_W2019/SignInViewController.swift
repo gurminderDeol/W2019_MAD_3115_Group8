@@ -20,10 +20,10 @@ let user = UserLogin()
     //gdsjgdesdgejd
     override func viewDidLoad() {
         super.viewDidLoad()
-        let s2 = UserLogin(sid:"samir",pass:"samir")
+        let s2 = UserLogin(sid:"jagmeet",pass:"123")
         let s1 = UserLogin(sid:"gurminder",pass:"kaur")
         
-        user.reg(uid: "samir", s: s2)
+        user.reg(uid: "jagmeet", s: s2)
         user.reg(uid: "gurminder", s: s1)
         print(user.users)
         if let uid = userdefaults.string(forKey: "userid")
