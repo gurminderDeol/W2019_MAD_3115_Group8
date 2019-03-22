@@ -30,6 +30,7 @@ class UserLogin
     {
         users.updateValue(s, forKey: uid)
     }
+    
     func checklogin(uid:String,pass:String)->Bool   {
         
         

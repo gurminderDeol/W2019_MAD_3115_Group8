@@ -411,21 +411,21 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FPt-dx-nwI">
-                                <rect key="frame" x="66" y="208" width="242" height="30"/>
+                                <rect key="frame" x="66" y="240" width="242" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VVM-DK-QIh">
-                                <rect key="frame" x="66" y="332" width="242" height="30"/>
+                                <rect key="frame" x="66" y="350" width="242" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Creditcard Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="304-x7-ZtQ">
-                                <rect key="frame" x="66" y="389" width="242" height="30"/>
+                                <rect key="frame" x="66" y="406" width="242" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -439,7 +439,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gO4-za-3b2">
-                                <rect key="frame" x="66" y="263" width="242" height="30"/>
+                                <rect key="frame" x="66" y="293" width="242" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -451,13 +451,22 @@
                                 <state key="normal" title="SignUp"/>
                                 <connections>
                                     <action selector="btnSignup:" destination="XWt-eT-ZtO" eventType="touchUpInside" id="Kyg-BW-Igr"/>
+                                    <segue destination="y1Y-FI-9bn" kind="show" identifier="signIn" id="IDd-9f-Ijd"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KFy-hh-CSV">
+                                <rect key="frame" x="66" y="189" width="242" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="k32-3h-TDR"/>
                     </view>
                     <connections>
+                        <outlet property="UserId" destination="KFy-hh-CSV" id="gpN-L1-8sk"/>
                         <outlet property="txtAddress" destination="VVM-DK-QIh" id="HkO-jr-wBu"/>
                         <outlet property="txtCreditCard" destination="304-x7-ZtQ" id="eAc-LO-pgy"/>
                         <outlet property="txtEmail" destination="FPt-dx-nwI" id="lb8-u1-74c"/>
@@ -468,7 +477,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkv-p7-yed" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1750" y="821"/>
+            <point key="canvasLocation" x="1749.5999999999999" y="820.83958020989508"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rdF-vB-7nJ">
@@ -589,6 +598,7 @@
         <image name="splash1.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="IDd-9f-Ijd"/>
         <segue reference="RxQ-Nb-vWa"/>
     </inferredMetricsTieBreakers>
 </document>

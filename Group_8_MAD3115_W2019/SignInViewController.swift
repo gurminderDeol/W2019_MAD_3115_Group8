@@ -64,8 +64,8 @@ let user = UserLogin()
         }
         else
         {
-            let alert = UIAlertController(title:nil,message:"Invalid",preferredStyle: .alert)
-            let addaction=UIAlertAction(title: "Invalid", style: .default, handler: nil)
+            let alert = UIAlertController(title:nil,message:"Invalid Details",preferredStyle: .alert)
+            let addaction=UIAlertAction(title: "OK", style: .default, handler: nil)
             alert.addAction(addaction)
             self.present(alert,animated: true,completion: nil)
             self.txtEmail.text=""
