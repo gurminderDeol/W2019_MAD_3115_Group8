@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0D7168062245411F0005B346 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7168052245411F0005B346 /* SignUpViewController.swift */; };
 		0D7168082245458D0005B346 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7168072245458D0005B346 /* ContactUsViewController.swift */; };
+		0D9AFF9E224574FE00153A8C /* help.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D9AFF9D224574FE00153A8C /* help.html */; };
+		0D9AFFA022457A5700153A8C /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9AFF9F22457A5700153A8C /* HelpViewController.swift */; };
 		0DBA5FC12244452B00FC28EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA5FC02244452B00FC28EF /* AppDelegate.swift */; };
 		0DBA5FC32244452B00FC28EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA5FC22244452B00FC28EF /* ViewController.swift */; };
 		0DBA5FC62244452B00FC28EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DBA5FC42244452B00FC28EF /* Main.storyboard */; };
@@ -40,6 +42,8 @@
 /* Begin PBXFileReference section */
 		0D7168052245411F0005B346 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0D7168072245458D0005B346 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		0D9AFF9D224574FE00153A8C /* help.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = help.html; sourceTree = "<group>"; };
+		0D9AFF9F22457A5700153A8C /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		0DBA5FBD2244452B00FC28EF /* Group_8_MAD3115_W2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Group_8_MAD3115_W2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DBA5FC02244452B00FC28EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DBA5FC22244452B00FC28EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 				0DBA5FE72244493E00FC28EF /* MenuTableViewController.swift */,
 				0DBA5FF22244544A00FC28EF /* ProductsTableViewCell.swift */,
 				0D7168072245458D0005B346 /* ContactUsViewController.swift */,
+				0D9AFF9D224574FE00153A8C /* help.html */,
+				0D9AFF9F22457A5700153A8C /* HelpViewController.swift */,
 			);
 			path = Group_8_MAD3115_W2019;
 			sourceTree = "<group>";
@@ -224,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DBA5FD8224446CB00FC28EF /* Help.png in Resources */,
+				0D9AFF9E224574FE00153A8C /* help.html in Resources */,
 				0DBA5FCB2244452C00FC28EF /* LaunchScreen.storyboard in Resources */,
 				0DBA5FD4224446B200FC28EF /* Cart.png in Resources */,
 				0DBA5FDA224446E000FC28EF /* log_out.png in Resources */,
@@ -257,6 +264,7 @@
 				0DBA5FC12244452B00FC28EF /* AppDelegate.swift in Sources */,
 				0D7168062245411F0005B346 /* SignUpViewController.swift in Sources */,
 				DFB0C8DA224493390049F4EE /* OrderDetails.swift in Sources */,
+				0D9AFFA022457A5700153A8C /* HelpViewController.swift in Sources */,
 				0DBA5FE82244493E00FC28EF /* MenuTableViewController.swift in Sources */,
 				0DBA5FE62244490A00FC28EF /* UserLogin.swift in Sources */,
 				0DBA5FE4224448D600FC28EF /* SignInViewController.swift in Sources */,

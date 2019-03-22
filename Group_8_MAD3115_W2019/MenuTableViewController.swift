@@ -68,6 +68,9 @@ class MenuTableViewController: UITableViewController {
                 print("Go to cart")
             case 5:
                 print("Go to Help Page")
+                let sb = UIStoryboard(name: "Main", bundle: nil)
+                let help = sb.instantiateViewController(withIdentifier: "help") as! HelpViewController
+             self.navigationController?.pushViewController(help, animated: true)
             case 6:
                 
                 print("Go to Contact US Page")
@@ -104,4 +107,5 @@ class MenuTableViewController: UITableViewController {
         p1.addProduct(productId: "P005", product: product5)
     }
     
+   
 }
