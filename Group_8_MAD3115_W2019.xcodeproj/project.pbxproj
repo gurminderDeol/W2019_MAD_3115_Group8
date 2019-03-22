@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D7168062245411F0005B346 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7168052245411F0005B346 /* SignUpViewController.swift */; };
+		0D7168082245458D0005B346 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7168072245458D0005B346 /* ContactUsViewController.swift */; };
 		0DBA5FC12244452B00FC28EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA5FC02244452B00FC28EF /* AppDelegate.swift */; };
 		0DBA5FC32244452B00FC28EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA5FC22244452B00FC28EF /* ViewController.swift */; };
 		0DBA5FC62244452B00FC28EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DBA5FC42244452B00FC28EF /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D7168052245411F0005B346 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		0D7168072245458D0005B346 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		0DBA5FBD2244452B00FC28EF /* Group_8_MAD3115_W2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Group_8_MAD3115_W2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DBA5FC02244452B00FC28EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DBA5FC22244452B00FC28EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,9 +111,10 @@
 				0DBA5FC92244452C00FC28EF /* LaunchScreen.storyboard */,
 				0DBA5FCC2244452C00FC28EF /* Info.plist */,
 				0DBA5FE3224448D600FC28EF /* SignInViewController.swift */,
-				0DBA5FE52244490A00FC28EF /* UserLogin.swift */,
+				0D7168052245411F0005B346 /* SignUpViewController.swift */,
 				0DBA5FE72244493E00FC28EF /* MenuTableViewController.swift */,
 				0DBA5FF22244544A00FC28EF /* ProductsTableViewCell.swift */,
+				0D7168072245458D0005B346 /* ContactUsViewController.swift */,
 			);
 			path = Group_8_MAD3115_W2019;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 		0DBA5FF42244556600FC28EF /* Modals */ = {
 			isa = PBXGroup;
 			children = (
+				0DBA5FE52244490A00FC28EF /* UserLogin.swift */,
 				0DBA5FF52244558600FC28EF /* Product.swift */,
 				DFB0C8D522448EA60049F4EE /* Customer.swift */,
 				DFB0C8D7224491AA0049F4EE /* ShippingInfo.swift */,
@@ -242,12 +248,14 @@
 			files = (
 				0DBA5FF12244520F00FC28EF /* ProductsViewController.swift in Sources */,
 				DFB0C8D622448EA60049F4EE /* Customer.swift in Sources */,
+				0D7168082245458D0005B346 /* ContactUsViewController.swift in Sources */,
 				0DBA5FF62244558600FC28EF /* Product.swift in Sources */,
 				DFB0C8DC224495630049F4EE /* Orders.swift in Sources */,
 				DFB0C8D8224491AA0049F4EE /* ShippingInfo.swift in Sources */,
 				0DBA5FC32244452B00FC28EF /* ViewController.swift in Sources */,
 				0DBA5FF32244544A00FC28EF /* ProductsTableViewCell.swift in Sources */,
 				0DBA5FC12244452B00FC28EF /* AppDelegate.swift in Sources */,
+				0D7168062245411F0005B346 /* SignUpViewController.swift in Sources */,
 				DFB0C8DA224493390049F4EE /* OrderDetails.swift in Sources */,
 				0DBA5FE82244493E00FC28EF /* MenuTableViewController.swift in Sources */,
 				0DBA5FE62244490A00FC28EF /* UserLogin.swift in Sources */,

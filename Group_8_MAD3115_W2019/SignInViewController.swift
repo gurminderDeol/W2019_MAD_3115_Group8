@@ -74,5 +74,13 @@ let user = UserLogin()
         
     }
    
+    @IBAction func btnSignUp(_ sender: UIButton) {
+       let s = UIStoryboard(name: "Main", bundle: nil)
+        let signUp = s.instantiateViewController(withIdentifier: "signUp") as!  SignUpViewController
+        self.navigationController?.pushViewController(signUp, animated: true)
+        
+    
+    }
+    
 
 }

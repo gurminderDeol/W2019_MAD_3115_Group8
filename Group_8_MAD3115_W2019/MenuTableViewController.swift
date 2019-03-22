@@ -67,6 +67,10 @@ class MenuTableViewController: UITableViewController {
             case 6:
                 
                 print("Go to Contact US Page")
+                let sb = UIStoryboard(name: "Main", bundle: nil)
+                let contactUs = sb.instantiateViewController(withIdentifier: "contactUs") as! ContactUsViewController
+                self.present(contactUs, animated: true)
+                
             case 7:
                 print("Call Logout")
                 let sb = UIStoryboard(name: "Main", bundle: nil)
