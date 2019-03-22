@@ -29,6 +29,7 @@
 		0DBA5FF32244544A00FC28EF /* ProductsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA5FF22244544A00FC28EF /* ProductsTableViewCell.swift */; };
 		0DBA5FF62244558600FC28EF /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA5FF52244558600FC28EF /* Product.swift */; };
 		0DBA5FF922445BAF00FC28EF /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA5FF822445BAF00FC28EF /* IDisplay.swift */; };
+		DFB0C8D622448EA60049F4EE /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB0C8D522448EA60049F4EE /* Customer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		0DBA5FF22244544A00FC28EF /* ProductsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewCell.swift; sourceTree = "<group>"; };
 		0DBA5FF52244558600FC28EF /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		0DBA5FF822445BAF00FC28EF /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
+		DFB0C8D522448EA60049F4EE /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				0DBA5FF52244558600FC28EF /* Product.swift */,
+				DFB0C8D522448EA60049F4EE /* Customer.swift */,
 			);
 			path = Modals;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DBA5FF12244520F00FC28EF /* ProductsViewController.swift in Sources */,
+				DFB0C8D622448EA60049F4EE /* Customer.swift in Sources */,
 				0DBA5FF62244558600FC28EF /* Product.swift in Sources */,
 				0DBA5FC32244452B00FC28EF /* ViewController.swift in Sources */,
 				0DBA5FF32244544A00FC28EF /* ProductsTableViewCell.swift in Sources */,
