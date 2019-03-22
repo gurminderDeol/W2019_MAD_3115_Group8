@@ -30,6 +30,9 @@
 		0DBA5FF62244558600FC28EF /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA5FF52244558600FC28EF /* Product.swift */; };
 		0DBA5FF922445BAF00FC28EF /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA5FF822445BAF00FC28EF /* IDisplay.swift */; };
 		DFB0C8D622448EA60049F4EE /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB0C8D522448EA60049F4EE /* Customer.swift */; };
+		DFB0C8D8224491AA0049F4EE /* ShippingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB0C8D7224491AA0049F4EE /* ShippingInfo.swift */; };
+		DFB0C8DA224493390049F4EE /* OrderDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB0C8D9224493390049F4EE /* OrderDetails.swift */; };
+		DFB0C8DC224495630049F4EE /* Orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB0C8DB224495630049F4EE /* Orders.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		0DBA5FF52244558600FC28EF /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		0DBA5FF822445BAF00FC28EF /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
 		DFB0C8D522448EA60049F4EE /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		DFB0C8D7224491AA0049F4EE /* ShippingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingInfo.swift; sourceTree = "<group>"; };
+		DFB0C8D9224493390049F4EE /* OrderDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetails.swift; sourceTree = "<group>"; };
+		DFB0C8DB224495630049F4EE /* Orders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orders.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,9 @@
 			children = (
 				0DBA5FF52244558600FC28EF /* Product.swift */,
 				DFB0C8D522448EA60049F4EE /* Customer.swift */,
+				DFB0C8D7224491AA0049F4EE /* ShippingInfo.swift */,
+				DFB0C8D9224493390049F4EE /* OrderDetails.swift */,
+				DFB0C8DB224495630049F4EE /* Orders.swift */,
 			);
 			path = Modals;
 			sourceTree = "<group>";
@@ -234,9 +243,12 @@
 				0DBA5FF12244520F00FC28EF /* ProductsViewController.swift in Sources */,
 				DFB0C8D622448EA60049F4EE /* Customer.swift in Sources */,
 				0DBA5FF62244558600FC28EF /* Product.swift in Sources */,
+				DFB0C8DC224495630049F4EE /* Orders.swift in Sources */,
+				DFB0C8D8224491AA0049F4EE /* ShippingInfo.swift in Sources */,
 				0DBA5FC32244452B00FC28EF /* ViewController.swift in Sources */,
 				0DBA5FF32244544A00FC28EF /* ProductsTableViewCell.swift in Sources */,
 				0DBA5FC12244452B00FC28EF /* AppDelegate.swift in Sources */,
+				DFB0C8DA224493390049F4EE /* OrderDetails.swift in Sources */,
 				0DBA5FE82244493E00FC28EF /* MenuTableViewController.swift in Sources */,
 				0DBA5FE62244490A00FC28EF /* UserLogin.swift in Sources */,
 				0DBA5FE4224448D600FC28EF /* SignInViewController.swift in Sources */,
