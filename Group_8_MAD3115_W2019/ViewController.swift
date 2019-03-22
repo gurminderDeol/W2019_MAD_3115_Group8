@@ -12,7 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+         self.navigationItem.hidesBackButton=true
         perform(#selector(splash), with:nil, afterDelay:3)
+        
     }
     
     @objc func splash()

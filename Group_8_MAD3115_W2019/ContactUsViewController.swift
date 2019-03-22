@@ -18,9 +18,6 @@ class ContactUsViewController: UIViewController {
     
 
     
-    @IBAction func btnLogout(_ sender: UIBarButtonItem) {
-        
-        
-    }
+
     
 }

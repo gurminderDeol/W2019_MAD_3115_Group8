@@ -23,6 +23,10 @@ class MenuTableViewController: UITableViewController {
         
 
     }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
     
     
@@ -73,9 +77,7 @@ class MenuTableViewController: UITableViewController {
                   self.present(contactUs, animated: true)
             case 7:
                 print("Call Logout")
-                let sb = UIStoryboard(name: "Main", bundle: nil)
-                let signin = sb.instantiateViewController(withIdentifier: "signIn") as! SignInViewController
-                self.present(signin, animated: true)
+                
                 
             default:
                 print("Invalid Option")
