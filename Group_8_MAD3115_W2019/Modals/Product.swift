@@ -15,19 +15,23 @@ class Product: IDisplay{
     var productId: String
     var productName: String
     var productPrice: Float
+    var image:String
     var productdict = Dictionary<String, Product>()
+    static let prod1 = Product()
     
     init() {
         
         self.productId = String()
         self.productName = String()
         self.productPrice = Float()
+        self.image  = String()
     }
     
-    init(productId: String, productName: String, productPrice: Float) {
+    init(productId: String, productName: String, productPrice: Float, image: String) {
         self.productId = productId
         self.productName = productName
         self.productPrice = productPrice
+        self.image = image
     }
     
     
@@ -41,10 +45,10 @@ class Product: IDisplay{
     }
     
     func displayData() {
-        print("------------------------------------------------------------------------------")
+        /*print("------------------------------------------------------------------------------")
         print("Product ID:     ||   Product name:       ||   Product price:  ")
         print("------------------------------------------------------------------------------")
-        
+        */
         for (_,v) in productdict
         {
             print("\(v.productId)            ||   \(v.productName)         ||           \(v.productPrice)")

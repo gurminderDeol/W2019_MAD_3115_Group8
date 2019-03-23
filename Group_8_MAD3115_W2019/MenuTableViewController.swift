@@ -11,14 +11,13 @@ import UIKit
 class MenuTableViewController: UITableViewController {
 
     @IBOutlet var tblMenu: UITableView!
-     let p1=Product()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationItem.hidesBackButton=true
         
-        getproducts()
-        p1.displayData()
+        
       
         
 
@@ -57,9 +56,9 @@ class MenuTableViewController: UITableViewController {
                 
                 //self.navigationController?.pushViewController(products, animated: true)
                 let sb = UIStoryboard(name: "Main", bundle: nil)
-                let products = sb.instantiateViewController(withIdentifier: "products") as! ProductsViewController
+                let product = sb.instantiateViewController(withIdentifier: "productPage") as! ProductViewController
                 
-                self.navigationController?.pushViewController(products, animated: true)
+                self.navigationController?.pushViewController(product, animated: true)
                 
                 
             case 3:
@@ -76,8 +75,8 @@ class MenuTableViewController: UITableViewController {
                 print("Go to Contact US Page")
                 let sb = UIStoryboard(name: "Main", bundle: nil)
                 let contactUs = sb.instantiateViewController(withIdentifier: "contactUs") as! ContactUsViewController
-               // self.navigationController?.pushViewController(contactUs, animated: true)
-                  self.present(contactUs, animated: true)
+                self.navigationController?.pushViewController(contactUs, animated: true)
+                  //self.present(contactUs, animated: true)
             case 7:
                 print("Call Logout")
                 
@@ -91,21 +90,7 @@ class MenuTableViewController: UITableViewController {
     
 
     
-    func getproducts()
-    {
-        let product1 = Product(productId: "P001", productName: "Hard Drive", productPrice: 120.00)
-        let product2 = Product(productId: "P002", productName: "ZIP drive", productPrice: 90.00)
-        let product3 = Product(productId: "P003", productName: "Floppy disk", productPrice: 50.00)
-        let product4 = Product(productId: "P004", productName: "Monitor", productPrice: 300.00)
-        let product5 = Product(productId: "P005", productName: "iPhone 7 Plus", productPrice: 1200.00)
-        //  let totalProducts = [product1,product2,product3,product4,product5]
-        
-        p1.addProduct(productId: "P001", product: product1)
-        p1.addProduct(productId: "P002", product: product2)
-        p1.addProduct(productId: "P003", product: product3)
-        p1.addProduct(productId: "P004", product: product4)
-        p1.addProduct(productId: "P005", product: product5)
-    }
+   
     
    
 }
