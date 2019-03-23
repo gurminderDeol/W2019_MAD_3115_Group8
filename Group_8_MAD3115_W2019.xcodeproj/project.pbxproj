@@ -30,7 +30,6 @@
 		0DBA5FE62244490A00FC28EF /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA5FE52244490A00FC28EF /* UserLogin.swift */; };
 		0DBA5FE82244493E00FC28EF /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA5FE72244493E00FC28EF /* MenuTableViewController.swift */; };
 		0DBA5FED2244507C00FC28EF /* laptop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DBA5FEC2244507C00FC28EF /* laptop.jpg */; };
-		0DBA5FEF2244511000FC28EF /* mouse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DBA5FEE2244511000FC28EF /* mouse.jpg */; };
 		0DBA5FF62244558600FC28EF /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA5FF52244558600FC28EF /* Product.swift */; };
 		0DBA5FF922445BAF00FC28EF /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA5FF822445BAF00FC28EF /* IDisplay.swift */; };
 		0DF7434E2245AF0B002F5222 /* monitor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DF7434D2245AF0B002F5222 /* monitor.jpg */; };
@@ -69,7 +68,6 @@
 		0DBA5FE52244490A00FC28EF /* UserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogin.swift; sourceTree = "<group>"; };
 		0DBA5FE72244493E00FC28EF /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		0DBA5FEC2244507C00FC28EF /* laptop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = laptop.jpg; sourceTree = "<group>"; };
-		0DBA5FEE2244511000FC28EF /* mouse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mouse.jpg; sourceTree = "<group>"; };
 		0DBA5FF52244558600FC28EF /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		0DBA5FF822445BAF00FC28EF /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
 		0DF7434D2245AF0B002F5222 /* monitor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = monitor.jpg; sourceTree = "<group>"; };
@@ -139,7 +137,6 @@
 				0DF743512245B0BD002F5222 /* mouse.jpg */,
 				0DF7434F2245AF93002F5222 /* usb.jpg */,
 				0DF7434D2245AF0B002F5222 /* monitor.jpg */,
-				0DBA5FEE2244511000FC28EF /* mouse.jpg */,
 				0DBA5FEC2244507C00FC28EF /* laptop.jpg */,
 				0DBA5FDB224446EB00FC28EF /* MyProfile.png */,
 				0DBA5FD7224446CB00FC28EF /* Help.png */,
@@ -254,7 +251,6 @@
 				0DBA5FDE224446FB00FC28EF /* products.png in Resources */,
 				0DBA5FC62244452B00FC28EF /* Main.storyboard in Resources */,
 				0DF7434E2245AF0B002F5222 /* monitor.jpg in Resources */,
-				0DBA5FEF2244511000FC28EF /* mouse.jpg in Resources */,
 				0DBA5FD6224446BA00FC28EF /* contact_us.png in Resources */,
 				0DBA5FED2244507C00FC28EF /* laptop.jpg in Resources */,
 				0DBA5FE0224447AA00FC28EF /* orders.png in Resources */,
