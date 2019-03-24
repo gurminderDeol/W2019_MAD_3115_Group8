@@ -567,6 +567,7 @@
                                                     <state key="normal" title="Add to cart"/>
                                                     <connections>
                                                         <action selector="btnAdd:" destination="pcq-7F-HRD" eventType="touchUpInside" id="Zo8-ny-bmL"/>
+                                                        <action selector="btnAddItem:" destination="DKG-G2-HaW" eventType="touchUpInside" id="haO-vF-t9E"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Id:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQz-tg-bp4">
@@ -602,7 +603,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uoI-qZ-ZLv">
-                                                    <rect key="frame" x="90" y="113" width="97" height="30"/>
+                                                    <rect key="frame" x="148" y="113" width="39" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -618,6 +619,7 @@
                                             </subviews>
                                         </view>
                                         <connections>
+                                            <outlet property="btnAdd1" destination="pDN-mp-gvP" id="19Q-J0-NEY"/>
                                             <outlet property="lblProductDetails" destination="Wgr-LI-8K0" id="aO7-zy-FrJ"/>
                                             <outlet property="lblProductId" destination="7E2-KU-Ygk" id="45J-XP-xv7"/>
                                             <outlet property="lblProductName" destination="44G-DQ-QgG" id="AOK-2R-Rfg"/>
@@ -651,37 +653,45 @@
                                 <rect key="frame" x="34" y="39" width="304" height="572"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" red="0.72369271516799927" green="0.93335217237472534" blue="0.9372560977935791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cartcell" rowHeight="191" id="K2K-Ld-opC" customClass="CartDisplayTableViewCell" customModule="Group_8_MAD3115_W2019" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="304" height="191"/>
+                                    <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cartcell" rowHeight="519" id="K2K-Ld-opC" customClass="CartDisplayTableViewCell" customModule="Group_8_MAD3115_W2019" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="304" height="519"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="K2K-Ld-opC" id="tAQ-gm-brF" customClass="CartDisplayTableViewCell" customModule="Group_8_MAD3115_W2019" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="304" height="190.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="304" height="518.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqm-Z2-ghH">
-                                                    <rect key="frame" x="65" y="11" width="42" height="21"/>
+                                                    <rect key="frame" x="65" y="38" width="200" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4RC-9C-YH3">
-                                                    <rect key="frame" x="65" y="106" width="42" height="21"/>
+                                                    <rect key="frame" x="65" y="69" width="200" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60x-Tt-K55">
-                                                    <rect key="frame" x="65" y="135" width="42" height="45"/>
+                                                    <rect key="frame" x="65" y="100" width="200" height="25"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohA-dC-agx">
-                                                    <rect key="frame" x="65" y="57" width="42" height="21"/>
+                                                    <rect key="frame" x="65" y="11" width="224" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hr1-2K-66t">
+                                                    <rect key="frame" x="65" y="124" width="200" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -690,6 +700,8 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="lblQuantity" destination="60x-Tt-K55" id="oQc-YL-J3Z"/>
+                                            <outlet property="lblSubTotal" destination="hr1-2K-66t" id="7t9-Dv-MiG"/>
                                             <outlet property="lblname" destination="jqm-Z2-ghH" id="tQo-Eb-Nxk"/>
                                             <outlet property="lblpid" destination="ohA-dC-agx" id="jo8-4r-Zu5"/>
                                             <outlet property="lblprice" destination="4RC-9C-YH3" id="GhE-jT-Fho"/>
@@ -698,7 +710,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.60676753530000005" green="1" blue="0.99490033759999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="k2v-Cu-9ro"/>
                     </view>
                     <connections>
@@ -722,6 +734,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wZ6-Tq-L5s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137" y="958"/>
         </scene>
     </scenes>
     <resources>

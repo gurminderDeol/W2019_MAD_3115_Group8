@@ -9,8 +9,8 @@
 import UIKit
 
 class ProductViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate {
-    
-    
+    let s = ShoppingCart()
+    var currentCell = 0
     let data = Product.prod1
     var a=[Product]()
     @IBOutlet weak var pcollection: UICollectionView!
@@ -55,16 +55,19 @@ class ProductViewController: UIViewController,UICollectionViewDataSource,UIColle
         collect.lblProductName.text = cv.productName
         collect.lblProductDetails.text = String(cv.productPrice)
         collect.productImage.image = UIImage(named: cv.image)
-        //collect.btnadd1.tag = indexPath.row
-        //collect.delegate = self
+        collect.btnAdd1.tag = indexPath.row
+        collect.delegate = self
         collect.index = indexPath.row
-        //collect.btnadd.addTarget(self, action: #selector(btnAddOrder(_ :)), for: .touchUpInside)
+        collect.btnAdd1.addTarget(self, action: #selector(btnAddItem(_ :)), for: .touchUpInside)
     
         
         return collect
     }
     
     
+    @IBAction func btnAddItem(_ sender: UIButton) {
+         print("\(sender.tag)")
+    }
 }
 
 
@@ -74,7 +77,7 @@ class ProductViewController: UIViewController,UICollectionViewDataSource,UIColle
 
 
 
-/*extension ProductViewController: OnSelection
+extension ProductViewController: OnSelection
 {
     
     func passProduct(index: Int) {
@@ -82,14 +85,15 @@ class ProductViewController: UIViewController,UICollectionViewDataSource,UIColle
         print(p.productName)
         
         let today=Date()
-        let shopcart = ShoppingCart(proid:p.productId,pname:p.productName,pprice:p.productPrice,qty: p.quantity,pdate:today)
+       let shopcart = ShoppingCart(proid:p.productId,pname:p.productName,pprice:p.productPrice,qty:Quantity.quantity,pdate:today)
+        
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let lionvc=sb.instantiateViewController(withIdentifier: "cart") as!  CartViewController
-        lionvc.sh = shopcart
+        lionvc.s = shopcart
         self.navigationController?.pushViewController(lionvc, animated: true)
         
-        print(sh.productList)
-}*/
+        print(s.productList)
+}
     
 
-
+}

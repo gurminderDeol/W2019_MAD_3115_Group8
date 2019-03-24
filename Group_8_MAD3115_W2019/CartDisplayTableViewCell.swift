@@ -14,6 +14,11 @@ class CartDisplayTableViewCell: UITableViewCell {
     @IBOutlet weak var lblname: UILabel!
     
     @IBOutlet weak var lblpid: UILabel!
+    
+    @IBOutlet weak var lblQuantity: UILabel!
+    
+    @IBOutlet weak var lblSubTotal: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

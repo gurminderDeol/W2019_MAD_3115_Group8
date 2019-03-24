@@ -16,14 +16,14 @@ class CartViewController:UIViewController,UITableViewDataSource,UITableViewDeleg
         var cprice:Float?
         var qty:Int?
         var addadate:Date?
-        var sh=ShoppingCart()
+        var s=ShoppingCart()
         var item=[ShoppingCart]()
         
         
         
         override func viewDidLoad() {
             super.viewDidLoad()
-            item.append(sh)
+            item.append(s)
             self.tblview.delegate=self
             self.tblview.dataSource=self
             getdata()
@@ -49,8 +49,8 @@ class CartViewController:UIViewController,UITableViewDataSource,UITableViewDeleg
             cell.lblname.text="ProductName:\(m.productname)"
             cell.lblpid.text="ProductID:\(m.productid!)"
             cell.lblprice.text="price:\(String(m.price))"
-            //cell.rqty.text = "Quantity:\(String(Extra.quantity))"
-            //cell.rtotal.text="Total:\(String(m.price * Float(Extra.quantity)))"
+            cell.lblQuantity.text = "Quantity:\(String(Quantity.quantity))"
+            cell.lblSubTotal.text="Total:\(String(m.price * Float(Quantity.quantity)))"
             return cell
         }
         

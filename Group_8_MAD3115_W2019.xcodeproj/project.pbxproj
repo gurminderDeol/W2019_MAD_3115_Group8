@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D26EA6C2247F2F3001E0F8E /* Quantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D26EA6B2247F2F3001E0F8E /* Quantity.swift */; };
 		0D7168062245411F0005B346 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7168052245411F0005B346 /* SignUpViewController.swift */; };
 		0D7168082245458D0005B346 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7168072245458D0005B346 /* ContactUsViewController.swift */; };
 		0D9AFF9E224574FE00153A8C /* help.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D9AFF9D224574FE00153A8C /* help.html */; };
@@ -46,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D26EA6B2247F2F3001E0F8E /* Quantity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quantity.swift; sourceTree = "<group>"; };
 		0D7168052245411F0005B346 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0D7168072245458D0005B346 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		0D9AFF9D224574FE00153A8C /* help.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = help.html; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				DFB0C8DB224495630049F4EE /* Orders.swift */,
 				DF818FA32246A0CF00AEDB1B /* Enum.swift */,
 				DF818FA1224696EF00AEDB1B /* ShoppingCart.swift */,
+				0D26EA6B2247F2F3001E0F8E /* Quantity.swift */,
 			);
 			path = Modals;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				DFB0C8D622448EA60049F4EE /* Customer.swift in Sources */,
 				0D7168082245458D0005B346 /* ContactUsViewController.swift in Sources */,
 				0DBA5FF62244558600FC28EF /* Product.swift in Sources */,
+				0D26EA6C2247F2F3001E0F8E /* Quantity.swift in Sources */,
 				DFB0C8DC224495630049F4EE /* Orders.swift in Sources */,
 				DFB0C8D8224491AA0049F4EE /* ShippingInfo.swift in Sources */,
 				0D9AFFA222457F0A00153A8C /* ProductViewController.swift in Sources */,

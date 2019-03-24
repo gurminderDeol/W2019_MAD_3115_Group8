@@ -19,12 +19,14 @@ class ProductCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var lblquantity: UITextField!
     @IBOutlet weak var productImage: UIImageView!
 
+    @IBOutlet weak var btnAdd1: UIButton!
+    
     var delegate: OnSelection?
     var index: Int?
     
     @IBAction func stepQuantity(_ sender: UIStepper) {
         lblquantity.text=String(Int(sender.value))
-        //Extra.quantity=Int(sender.value)
+        Quantity.quantity=Int(sender.value)
         
         
         
