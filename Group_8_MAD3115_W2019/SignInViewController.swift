@@ -16,8 +16,9 @@ let user = UserLogin()
     @IBOutlet weak var txtPassword: UITextField!
     
     @IBOutlet weak var switchStatus: UISwitch!
+    var name:String?
+    var pass:String?
     let userdefaults = UserDefaults.standard
-    //gdsjgdesdgejd
     override func viewDidLoad() {
         super.viewDidLoad()
         let s2 = UserLogin(sid:"jagmeet",pass:"123")
@@ -53,6 +54,9 @@ let user = UserLogin()
             userdefaults.removeObject(forKey: "pass")
             
         }
+    
+        
+                        
         let c = user.checklogin(uid: txtEmail.text!, pass: txtPassword.text!)
         
         if (c)
@@ -60,7 +64,6 @@ let user = UserLogin()
             let sb=UIStoryboard(name: "Main", bundle: nil)
             let lionvc=sb.instantiateViewController(withIdentifier: "menu") as!  MenuTableViewController
             self.navigationController?.pushViewController(lionvc, animated: true)
-            // self.present(lionvc, animated: true)
         }
         else
         {
@@ -74,7 +77,7 @@ let user = UserLogin()
         
     }
    
-    @IBAction func btnSignUp(_ sender: UIButton) {
+       @IBAction func btnSignUp(_ sender: UIButton) {
        let s = UIStoryboard(name: "Main", bundle: nil)
         let signUp = s.instantiateViewController(withIdentifier: "signUp") as!  SignUpViewController
         self.navigationController?.pushViewController(signUp, animated: true)

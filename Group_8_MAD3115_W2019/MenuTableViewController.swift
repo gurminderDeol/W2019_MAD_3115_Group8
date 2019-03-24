@@ -52,9 +52,7 @@ class MenuTableViewController: UITableViewController {
                  self.navigationController?.pushViewController(studentDetailsVC, animated: true)*/
             case 2:
                 print("Go to Products Page")
-                //performSegue(withIdentifier: "toproducts", sender: self)
                 
-                //self.navigationController?.pushViewController(products, animated: true)
                 let sb = UIStoryboard(name: "Main", bundle: nil)
                 let product = sb.instantiateViewController(withIdentifier: "productPage") as! ProductViewController
                 
@@ -64,7 +62,10 @@ class MenuTableViewController: UITableViewController {
             case 3:
                 print("Go to Order History Page")
             case 4:
-                print("Go to cart")
+                //print("Go to cart")
+                let sb=UIStoryboard(name: "Main", bundle: nil)
+                let homevc=sb.instantiateViewController(withIdentifier: "cart") as!   CartViewController
+                self.navigationController?.pushViewController(homevc, animated: true)
             case 5:
                 print("Go to Help Page")
                 let sb = UIStoryboard(name: "Main", bundle: nil)

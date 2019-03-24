@@ -43,7 +43,7 @@ class Customer: UserLogin
     func login(uid:String,pass:String)->Bool
     {
         
-        c=super.checklogin(uid: uid,pass: pass)
+        c = super.checklogin(uid: uid,pass: pass)
         return c!
     }
     

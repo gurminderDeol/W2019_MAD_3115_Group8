@@ -55,10 +55,41 @@ class ProductViewController: UIViewController,UICollectionViewDataSource,UIColle
         collect.lblProductName.text = cv.productName
         collect.lblProductDetails.text = String(cv.productPrice)
         collect.productImage.image = UIImage(named: cv.image)
-        // Configure the cell
+        //collect.btnadd1.tag = indexPath.row
+        //collect.delegate = self
+        collect.index = indexPath.row
+        //collect.btnadd.addTarget(self, action: #selector(btnAddOrder(_ :)), for: .touchUpInside)
+    
         
         return collect
     }
     
     
 }
+
+
+
+
+
+
+
+
+/*extension ProductViewController: OnSelection
+{
+    
+    func passProduct(index: Int) {
+        let p = a[index]
+        print(p.productName)
+        
+        let today=Date()
+        let shopcart = ShoppingCart(proid:p.productId,pname:p.productName,pprice:p.productPrice,qty: p.quantity,pdate:today)
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let lionvc=sb.instantiateViewController(withIdentifier: "cart") as!  CartViewController
+        lionvc.sh = shopcart
+        self.navigationController?.pushViewController(lionvc, animated: true)
+        
+        print(sh.productList)
+}*/
+    
+
+
