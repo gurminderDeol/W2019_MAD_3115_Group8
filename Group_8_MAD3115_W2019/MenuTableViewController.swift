@@ -11,7 +11,8 @@ import UIKit
 class MenuTableViewController: UITableViewController {
 
     @IBOutlet var tblMenu: UITableView!
-    
+    var name:String?
+    var password:String?
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,13 +46,20 @@ class MenuTableViewController: UITableViewController {
                 print(" ")
             case 1:
                 print("Go to myProfile")
+                let sb = UIStoryboard(name: "Main", bundle: nil)
+                let Profile = sb.instantiateViewController(withIdentifier: "MyProfile") as! ProfileViewController
+                self.navigationController?.pushViewController(Profile, animated: true)
+                Profile.profileName=name
+                Profile.profilePassword=password
+                
+                //self.present(contactUs, animated: true)
                 
                 /*let sb = UIStoryboard(name: "Main", bundle: nil)
                  let studentDetailsVC = sb.instantiateViewController(withIdentifier: "studentDetailsVC") as! StudentInforamtionViewController
                  
                  self.navigationController?.pushViewController(studentDetailsVC, animated: true)*/
             case 2:
-                print("Go to Products Page")
+                //print("Go to Products Page")
                 
                 let sb = UIStoryboard(name: "Main", bundle: nil)
                 let product = sb.instantiateViewController(withIdentifier: "productPage") as! ProductViewController
@@ -72,11 +80,15 @@ class MenuTableViewController: UITableViewController {
                 let help = sb.instantiateViewController(withIdentifier: "help") as! HelpViewController
              self.navigationController?.pushViewController(help, animated: true)
             case 6:
+                let alert = UIAlertController(title:"Any Queries",message:"Call us : 647 648 0000 ",preferredStyle: .alert)
+                let addaction=UIAlertAction(title: "OK", style: .default, handler: nil)
+                alert.addAction(addaction)
+                self.present(alert,animated: true,completion: nil)
                 
-                print("Go to Contact US Page")
-                let sb = UIStoryboard(name: "Main", bundle: nil)
-                let contactUs = sb.instantiateViewController(withIdentifier: "contactUs") as! ContactUsViewController
-                self.navigationController?.pushViewController(contactUs, animated: true)
+                //print("Go to Contact US Page")
+                //let sb = UIStoryboard(name: "Main", bundle: nil)
+                //let contactUs = sb.instantiateViewController(withIdentifier: "contactUs") as! ContactUsViewController
+                //self.navigationController?.pushViewController(contactUs, animated: true)
                   //self.present(contactUs, animated: true)
             case 7:
                 print("Call Logout")
@@ -87,11 +99,4 @@ class MenuTableViewController: UITableViewController {
             }
         }
     }
-    
-    
-
-    
-   
-    
-   
 }

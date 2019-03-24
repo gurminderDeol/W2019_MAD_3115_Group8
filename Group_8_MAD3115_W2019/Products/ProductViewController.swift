@@ -85,7 +85,7 @@ extension ProductViewController: OnSelection
         print(p.productName)
         
         let today=Date()
-       let shopcart = ShoppingCart(proid:p.productId,pname:p.productName,pprice:p.productPrice,qty:Quantity.quantity,pdate:today)
+        let shopcart = ShoppingCart(PrductId:p.productId,PName:p.productName,Price:p.productPrice,Quantity:Quantity.quantity,Date:today)
         
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let lionvc=sb.instantiateViewController(withIdentifier: "cart") as!  CartViewController

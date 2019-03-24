@@ -8,15 +8,22 @@
 
 import UIKit
 
-class ContactUsViewController: UIViewController {
+class ProfileViewController: UIViewController {
+    var profileName:String?
+    var profilePassword:String?
 
+    @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var txtName: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        txtName.text=profileName
+        txtPassword.text=profilePassword
+        
 
         // Do any additional setup after loading the view.
     }
     
-
+   
     
 
     

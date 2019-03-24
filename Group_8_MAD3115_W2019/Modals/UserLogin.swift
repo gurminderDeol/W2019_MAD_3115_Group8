@@ -14,8 +14,6 @@ class UserLogin
     var users = Dictionary<String,UserLogin>()
     var pass:String
     var check:Bool?
-    
-    
     init() {
         self.sid=String()
         self.pass=String()
@@ -28,32 +26,32 @@ class UserLogin
     
     func reg(uid:String,s:UserLogin)
     {
-        users.updateValue(s, forKey: uid)
+        users.updateValue(s,forKey: uid)
     }
     
-    func checklogin(uid:String,pass:String)->Bool   {
-        
-        
+    func checklogin(uid:String,pass:String) -> Bool
+    {
         
         if let u=users[uid]
         {
-            
             if u.pass==pass
             {
                 check = true
-                
-                
             }
             else
             {
-                check = false
+              check = false
             }
         }
         else
         {
-            check=false
+        check = false
         }
-        return check!
-}
     
+    return check!
+    
+    
+     }
+    
+
 }

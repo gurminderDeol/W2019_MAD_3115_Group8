@@ -19,14 +19,19 @@ let user = UserLogin()
     var name:String?
     var pass:String?
     let userdefaults = UserDefaults.standard
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         let s2 = UserLogin(sid:"jagmeet",pass:"123")
         let s1 = UserLogin(sid:"gurminder",pass:"kaur")
+        //let s3 = UserLogin(sid:"gurminder",pass:"deol")
         
         user.reg(uid: "jagmeet", s: s2)
         user.reg(uid: "gurminder", s: s1)
+        //user.reg(uid: "deolgurminder",s: s3)
         print(user.users)
+        
         if let uid = userdefaults.string(forKey: "userid")
         {
             txtEmail.text = uid
@@ -55,8 +60,6 @@ let user = UserLogin()
             
         }
     
-        
-                        
         let c = user.checklogin(uid: txtEmail.text!, pass: txtPassword.text!)
         
         if (c)
@@ -64,6 +67,9 @@ let user = UserLogin()
             let sb=UIStoryboard(name: "Main", bundle: nil)
             let lionvc=sb.instantiateViewController(withIdentifier: "menu") as!  MenuTableViewController
             self.navigationController?.pushViewController(lionvc, animated: true)
+            lionvc.name = txtEmail.text
+            lionvc.password = txtPassword.text
+        
         }
         else
         {

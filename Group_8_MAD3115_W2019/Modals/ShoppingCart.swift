@@ -29,20 +29,18 @@ class ShoppingCart
         self.dateadded=Date()
     }
     
-    init(proid:String,pname:String,pprice:Float,qty:Int,pdate:Date)
+    init(PrductId:String,PName:String,Price:Float,Quantity:Int,Date:Date)
     {
-        self.productid=proid
-        self.productname=pname
-        self.price=pprice
-        self.quantity=qty
-        self.dateadded = pdate
+        self.productid=PrductId
+        self.productname=PName
+        self.price=Price
+        self.quantity=Quantity
+        self.dateadded = Date
     }
-    
-    
-    
-    func addcartitem(shop:ShoppingCart)->Bool
+
+    func addcartitem(shopping:ShoppingCart)->Bool
     {
-        self.productList.append(shop)
+        self.productList.append(shopping)
             return true
         }
         

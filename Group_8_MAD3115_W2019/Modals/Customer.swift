@@ -51,10 +51,10 @@ class Customer: UserLogin
     {
         customerdetails[usid]=cust
         super.users[usid]=user
-        
         print(customerdetails)
         print(users)
     }
+    
    
     
     
