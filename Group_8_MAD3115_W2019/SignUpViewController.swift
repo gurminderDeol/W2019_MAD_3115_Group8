@@ -29,46 +29,69 @@ class SignUpViewController: UIViewController {
         
         
     }
+   
+
     
     @IBAction func btnSignup(_ sender: UIButton) {
         
         
         
-        if (txtName.text != "" || UserId.text != " " || txtPassword.text != "" || txtAddress.text != " " || txtEmail.text != " " || txtCreditCard.text != " " || txtShippingInfo.text != " " )
-        {
+      
+        if(txtName.text?.count)! > 4{
+            if(txtEmail.text?.isValidEmail())!{
+        if(txtPassword.text?.isValidPassword())!{
+        
+            if(txtAddress.text?.count)! > 4{
+                if(txtCreditCard.text?.count)! > 4{
+                    
+                        if(txtShippingInfo.text?.count)! > 4{
+                    
             
-                let randomNumber = Int.random(in: 0...100)
-            let c1=Customer(custid: randomNumber,customerName: txtName.text!,address: txtAddress.text!,creditCardInfo: txtCreditCard.text!,email:txtEmail.text!,shippinginfo:txtShippingInfo.text!)
-                
-            let u1=UserLogin(sid:UserId.text!,pass:txtName.text!)
-                
-            customer.register(cid: randomNumber, usid: UserId.text!, cust: c1, user: u1)
-            let alert = UIAlertController(title:nil,message:"Registeration Successful",preferredStyle: .alert)
-            let addaction=UIAlertAction(title: "OK", style: .default, handler: nil)
-            alert.addAction(addaction)
-            self.present(alert,animated: true,completion: nil)
-            perform(#selector(tologinpage), with: nil, afterDelay: 2)
-            
+        
+                            let sb = UIStoryboard(name: "Main", bundle: nil)
+                            let loginVC = sb.instantiateViewController(withIdentifier: "signIn") as! SignInViewController
+                            self.navigationController?.pushViewController(loginVC, animated: true)
+                            
             
         }
-        else
-        {
-            let alert = UIAlertController(title:nil,message:"Invalid Details",preferredStyle: .alert)
-            let addaction=UIAlertAction(title: "OK", style: .default, handler: nil)
-            alert.addAction(addaction)
-            self.present(alert,animated: true,completion: nil)
-            self.txtName.text=""
-            self.txtPassword.text=""
-        }
-        
-        
+                        else{
+                            let shippingAlert = UIAlertController(title: "ShippingInfo Alert", message: "ShippingInfo must contain 4 characters", preferredStyle: .alert)
+                            shippingAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil ))
+                            self.present(shippingAlert, animated: true)
+                        }
+                    }
+                else{
+                    let cardAlert = UIAlertController(title: "Credit card Alert", message: "Invalid credit information", preferredStyle: .alert)
+                    cardAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil ))
+                    self.present(cardAlert, animated: true)
+                }
+            }else{
+                let addressAlert = UIAlertController(title: "Address Alert", message: "Invalid address", preferredStyle: .alert)
+                addressAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil ))
+                self.present(addressAlert, animated: true)
+            }
+        }else{
+            let passwordAlert = UIAlertController(title: "Password Alert", message: "Invalid password", preferredStyle: .alert)
+            passwordAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil ))
+            self.present(passwordAlert, animated: true)
+                }
+            }else{
+                        let emailAlert = UIAlertController(title: "Email Alert", message: "Invalid Email", preferredStyle: .alert)
+                emailAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil ))
+                self.present(emailAlert, animated: true)
+                    }
+            }else{
+                    let nameAlert = UIAlertController(title: "Username Alert", message: "Invalid username", preferredStyle: .alert)
+           nameAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil ))
+            self.present(nameAlert, animated: true)
+                }
+    }
+                        
+    
     
     
     }
     
-    @objc func tologinpage()
-    {
-        performSegue(withIdentifier: "signIn", sender: self)
-    }
+   
 
-}
+
