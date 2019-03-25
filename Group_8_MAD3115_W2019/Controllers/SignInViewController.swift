@@ -9,7 +9,7 @@
 import UIKit
 
 class SignInViewController: UIViewController {
-let user = UserLogin()
+    let user = UserLogin()
    
     @IBOutlet weak var txtEmail: UITextField!
     
@@ -25,7 +25,6 @@ let user = UserLogin()
         super.viewDidLoad()
         let s2 = UserLogin(sid:"jagmeet",pass:"123")
         let s1 = UserLogin(sid:"gurminder",pass:"kaur")
-        //let s3 = UserLogin(sid:"gurminder",pass:"deol")
         
         user.reg(uid: "jagmeet", s: s2)
         user.reg(uid: "gurminder", s: s1)

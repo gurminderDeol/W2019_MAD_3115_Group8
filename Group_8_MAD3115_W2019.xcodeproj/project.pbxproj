@@ -118,24 +118,17 @@
 		0DBA5FBF2244452B00FC28EF /* Group_8_MAD3115_W2019 */ = {
 			isa = PBXGroup;
 			children = (
+				DFB9408022490C5300DBF36D /* Controllers */,
 				DF818FA52246AFB100AEDB1B /* Html file */,
 				0DBA5FF722445B9200FC28EF /* Protocol */,
 				0DBA5FF42244556600FC28EF /* Modals */,
 				0DBA5FE92244497500FC28EF /* Products */,
 				0DBA5FD22244467400FC28EF /* Images */,
 				0DBA5FC02244452B00FC28EF /* AppDelegate.swift */,
-				0DBA5FC22244452B00FC28EF /* ViewController.swift */,
 				0DBA5FC42244452B00FC28EF /* Main.storyboard */,
 				0DBA5FC72244452C00FC28EF /* Assets.xcassets */,
 				0DBA5FC92244452C00FC28EF /* LaunchScreen.storyboard */,
 				0DBA5FCC2244452C00FC28EF /* Info.plist */,
-				0DBA5FE3224448D600FC28EF /* SignInViewController.swift */,
-				0D7168052245411F0005B346 /* SignUpViewController.swift */,
-				0DBA5FE72244493E00FC28EF /* MenuTableViewController.swift */,
-				0D7168072245458D0005B346 /* ProfileViewController.swift */,
-				0D9AFF9F22457A5700153A8C /* HelpViewController.swift */,
-				DF818FA62246B02500AEDB1B /* CartViewController.swift */,
-				DF818FA82246C08D00AEDB1B /* CartDisplayTableViewCell.swift */,
 			);
 			path = Group_8_MAD3115_W2019;
 			sourceTree = "<group>";
@@ -198,6 +191,21 @@
 				0D9AFF9D224574FE00153A8C /* help.html */,
 			);
 			path = "Html file";
+			sourceTree = "<group>";
+		};
+		DFB9408022490C5300DBF36D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0DBA5FE3224448D600FC28EF /* SignInViewController.swift */,
+				0D7168052245411F0005B346 /* SignUpViewController.swift */,
+				0DBA5FC22244452B00FC28EF /* ViewController.swift */,
+				0DBA5FE72244493E00FC28EF /* MenuTableViewController.swift */,
+				0D7168072245458D0005B346 /* ProfileViewController.swift */,
+				0D9AFF9F22457A5700153A8C /* HelpViewController.swift */,
+				DF818FA62246B02500AEDB1B /* CartViewController.swift */,
+				DF818FA82246C08D00AEDB1B /* CartDisplayTableViewCell.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
